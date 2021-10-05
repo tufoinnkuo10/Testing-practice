@@ -16,10 +16,34 @@ const tocapitalize = (string) => {
 
 //  calculator
 
-const validate = (a, b) => {
-  if(typeof a !== 'number' || typeof b != 'number'){
-    throw new Error('only accepts numbers as arguments')
+
+function add (x, y){
+  if(typeof x === 'string' || typeof y === 'string'){
+    throw new Error('only numbers are accepted')
   }
+  
+  return x + y;
+
 }
 
-module.exports = {stringLength, reverseString, tocapitalize}
+function subtract (x, y){
+  return x - y;
+}
+
+function multiply (x, y){
+  return x * y;
+}
+
+function divide (x, y){
+  return x / y;
+}
+
+
+//  const { add, subtract, multiply,divide} = calculator;
+//const validate = (a, b) => {
+ // if(typeof a !== 'number' || typeof b != 'number'){
+ ///   throw new Error('only accepts numbers as arguments')
+  //}
+//}
+
+module.exports = {stringLength, reverseString, tocapitalize, add}
