@@ -1,4 +1,4 @@
-const { stringLength, reverseString } = require('./myjest.js');
+const { stringLength, reverseString, tocapitalize } = require('./myjest.js');
 
 test('return the length of a word', () => {
     expect(stringLength('fish')).toBe(4);
@@ -28,7 +28,7 @@ test('is not case sensitive', () => {
     expect(stringLength("ALLCAPS")).toBe(7);
 });
 
-
+//  reverse string
   
   test('returns string in lower case', () => {
     const string = 'tufoin';
@@ -41,6 +41,16 @@ test('is not case sensitive', () => {
     const result = reverseString(string);
     expect(result).toBe('SAMX');
   })
+
+// test capitalization
+
+test('string letter capitalization', () => {
+  const string = 'boss';
+
+  const result = tocapitalize(string);
+
+  expect(result).toBe('Boss')
+})
 
 
 

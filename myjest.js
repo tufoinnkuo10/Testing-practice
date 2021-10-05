@@ -8,6 +8,12 @@ const stringLength = (str) => {
 
 const reverseString = string => [...string].reverse().join('') 
 
+//  to capital letter
+
+const tocapitalize = (string) => {
+  return [string[0].toUpperCase(), ...string.slice(1)].join('')
+};
+
 //  calculator
 
 const validate = (a, b) => {
@@ -16,4 +22,4 @@ const validate = (a, b) => {
   }
 }
 
-module.exports = {stringLength, reverseString}
+module.exports = {stringLength, reverseString, tocapitalize}
