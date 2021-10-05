@@ -1,0 +1,24 @@
+{
+  "name": "testing-practice",
+  "version": "1.0.0",
+  "description": "working with jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watch *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tufoinnkuo10/Testing-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tufoinnkuo10/Testing-practice/issues"
+  },
+  "homepage": "https://github.com/tufoinnkuo10/Testing-practice#readme",
+  "devDependencies": {
+    "jest": "^27.2.4"
+  }
+}
