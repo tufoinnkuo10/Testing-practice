@@ -1,4 +1,4 @@
-const { stringLength, reverseString, tocapitalize, add} = require('./myjest.js');
+const { stringLength, reverseString, tocapitalize, add, subtract, multiplication, division} = require('./myjest.js');
 
 test('return the length of a word', () => {
     expect(stringLength('fish')).toBe(4);
@@ -59,6 +59,28 @@ test('adding two numbers', () => {
   const sum = add(x,y);
   expect (sum).toBe(10)
 
+})
+
+// subtract two numbers
+test ('difference between two numbers', () => {
+  const x = 10, y=5;
+  const minus = subtract (x, y);
+  expect(minus).toBe(5)
+} )
+
+// multiply numbers
+
+test ('multiply two numbers', () => {
+  const x = 10, y= 10;
+  const multiply = multiplication(x,y);
+  expect(multiply).toBe(100)
+})
+
+// division of numbers excluding zero
+test ('divide two numbers', ()=>{
+  const x = 100, y=20;
+  const divide = division(x,y);
+  expect(divide).toBe(5)
 })
 
 

@@ -26,24 +26,29 @@ function add (x, y){
 
 }
 
-function subtract (x, y){
-  return x - y;
+function subtract (x,y) {
+  if (typeof x === 'string' || typeof y === 'string'){
+    throw new error ("only numbers are allowed")
+  }
+  return x - y
 }
 
-function multiply (x, y){
-  return x * y;
+function multiplication (x,y) {
+  if (typeof x === 'string' || typeof y === 'string'){
+    throw new error ("only numbers are allowed")
+  }
+  return x * y
 }
 
-function divide (x, y){
-  return x / y;
+function division (x,y) {
+  if (typeof x === 'string' || typeof y === 'string'){
+    if (typeof x === "0" || typeof y === "0"){
+      throw new error1 ('division by zero cannot go')
+    }
+    throw new error ("only numbers are allowed")
+  }
+  return x / y
 }
 
 
-//  const { add, subtract, multiply,divide} = calculator;
-//const validate = (a, b) => {
- // if(typeof a !== 'number' || typeof b != 'number'){
- ///   throw new Error('only accepts numbers as arguments')
-  //}
-//}
-
-module.exports = {stringLength, reverseString, tocapitalize, add}
+module.exports = {stringLength, reverseString, tocapitalize, add, subtract, multiplication, division}
