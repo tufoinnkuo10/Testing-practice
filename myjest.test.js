@@ -1,4 +1,4 @@
-const stringLength = require('./stringLength.js');
+const { stringLength, reverseString } = require('./myjest.js');
 
 test('return the length of a word', () => {
     expect(stringLength('fish')).toBe(4);
@@ -27,3 +27,20 @@ test('is not case sensitive', () => {
     expect(stringLength("cApiTaL")).toBe(7);
     expect(stringLength("ALLCAPS")).toBe(7);
 });
+
+
+  
+  test('returns string in lower case', () => {
+    const string = 'tufoin';
+    const result = reverseString(string);
+    expect(result).toBe('niofut');
+  })
+
+  test('return string in upper case', () => {
+    const string = 'XMAS';
+    const result = reverseString(string);
+    expect(result).toBe('SAMX');
+  })
+
+
+
